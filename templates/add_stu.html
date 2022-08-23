@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}
+  Add_Student
+{% endblock %}
+
+{% block main %}
+  <section class="container">
+    <div class="row justify-content-around text-center text-white">
+      <div class="col-sm-8">
+        <h3>CRUD Project in Python</h3>
+      </div>
+    </div>
+
+    <div class="row justify-content-around text-white mt-1">
+      <div class="col-sm-4">
+        <form action="" method="POST" class="p-2 shadow">
+          {% csrf_token %}
+          {{ fm.as_p }}
+          <button type="submit" class="btn btn-primary submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+{% endblock %}
